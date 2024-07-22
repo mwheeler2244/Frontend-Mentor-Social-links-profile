@@ -1,0 +1,76 @@
+:root{
+--Green: hsl(75, 94%, 57%);
+
+--White: hsl(0, 0%, 100%);
+
+--Grey-700: hsl(0, 0%, 20%);
+--Grey-800: hsl(0, 0%, 12%);
+--Grey-900: hsl(0, 0%, 8%);
+--fw-sm:400;
+--fw-med:600;
+--fw-lrg:700;
+}
+
+body{
+    max-width: 1440px;
+    font-size: .875rem;
+    font-family: "Inter",sans-serif;
+    background-color: var(--Grey-900);
+
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.container{
+    max-width: 300px; 
+    background-color: var(--Grey-800);
+    color: var(--White);
+    text-align: center;
+    padding-block: 1rem;
+    margin-inline: auto;
+    margin-block: 10%;
+
+}
+img{
+    width: 75px;
+    border-radius: 50%;
+    margin-inline: auto;
+
+
+}
+.home__text{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+span:nth-of-type(1){
+    color: var(--Green);
+    padding-bottom: 1rem;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.25rem;
+
+}
+.btn{
+    background-color: var(--Grey-700);
+    border-radius: 4px;
+    color: var(--White);
+    border: none;
+    padding: .5rem;
+    width: 250px;
+    cursor: pointer;
+
+
+}
+/* .btn:hover,  */
+.btn:active{
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
